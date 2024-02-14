@@ -14,7 +14,7 @@ def chat_message(callback=echo_message):
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
 
-    if prompt := st.chat_input("question"):
+    if prompt := st.chat_input("Message GPT..."):
         with st.chat_message("user"):
             st.markdown(prompt)
 

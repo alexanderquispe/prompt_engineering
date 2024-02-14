@@ -12,19 +12,23 @@ prompt engineering course based on GPT
 | 7 | Recommender Systems - Pinecone                       | [Recomender-system.ipynb](https://colab.research.google.com/github/TJhon/lanchain_curso/blob/day3/Pinecone/recomender_system.ipynb)   |
 | 8 | Facial Similarity Search - Pinecone                 | [Facial similarity.ipynb](https://colab.research.google.com/github/TJhon/lanchain_curso/blob/day3/Pinecone/facial_similarity_search.ipynb) |
 
-# Simple Aplication
+# Simple Application Setup
 
-Clone the repository
+To get started with the simple application, follow these steps:
+
+## 1. Clone the Repository
+
+First, clone the repository to your local machine:
 
 ```sh
-git clone https://github.com/alexanderquispe/prompt_engineering prompt_e
-cd promt_e
+git clone https://github.com/alexanderquispe/prompt_engine prompt_e
+cd prompt_e
 git checkout streamlit-app
 ```
 
-Python environment
+## 2. Set Up Python Environment
 
-- python version: 3.10
+Ensure you have Python version 3.10 installed. Then, set up the Python environment using Pipenv:
 
 ```sh
 pip install pipenv
@@ -32,7 +36,22 @@ pipenv shell
 pipenv install
 ```
 
-Run the application
+## 3. Configure API Key
+
+Create a `.env` file in the project directory and add your OpenAI API key to it. This file will automatically extract and insert the API key into the environment.
+
+```
+.env
+OPENAI_API_KEY = "sk-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+```
+
+Alternatively, if you prefer not to create the environment file, you can input the API key directly in the application.
+
+![API Key Input](./figs/apikey.png)
+
+## 4. Run the Application
+
+Finally, run the application using one of the following commands:
 
 ```sh
 pipenv run streamlit run app.py
@@ -40,3 +59,8 @@ pipenv run streamlit run app.py
 streamlit run app.py
 ```
 
+That's it! You should now have the simple application up and running locally on your machine.
+
+# 5. Preview
+
+![](./figs/preview.png)

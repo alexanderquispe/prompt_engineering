@@ -29,10 +29,8 @@ else:
     Retriever = st.session_state[vector_db_name_memory]
 
 
-with st.expander("ADD PDFS"):
-    pdfs = st.file_uploader(
-        "Ingrese el documento PDF", accept_multiple_files=True, type="pdf"
-    )
+with st.expander("Add Files"):
+    pdfs = st.file_uploader("Pdf files", accept_multiple_files=True, type="pdf")
 
     if not pdfs:
         st.stop()
