@@ -1,4 +1,4 @@
-# prompt_engineering
+# Prompt_engineering
 prompt engineering course based on GPT 
 
 |   | Class                                     | Link                                                                                 |
@@ -11,3 +11,32 @@ prompt engineering course based on GPT
 | 6 | Building Applications through RAG         |                                                                                      |
 | 7 | Recommender Systems - Pinecone                       | [Recomender-system.ipynb](https://colab.research.google.com/github/TJhon/lanchain_curso/blob/day3/Pinecone/recomender_system.ipynb)   |
 | 8 | Facial Similarity Search - Pinecone                 | [Facial similarity.ipynb](https://colab.research.google.com/github/TJhon/lanchain_curso/blob/day3/Pinecone/facial_similarity_search.ipynb) |
+
+# Simple Aplication
+
+Clone the repository
+
+```sh
+git clone https://github.com/alexanderquispe/prompt_engineering prompt_e
+cd promt_e
+git checkout streamlit-app
+```
+
+Python environment
+
+- python version: 3.10
+
+```sh
+pip install pipenv
+pipenv shell
+pipenv install
+```
+
+Run the application
+
+```sh
+pipenv run streamlit run app.py
+# or
+streamlit run app.py
+```
+
